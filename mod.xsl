@@ -4,12 +4,15 @@
         <div class="J_OXMod oxmod-company-introduce" ox-mod="company-introduce">
             <xsl:for-each select="data/info-company/i[1]">
             	<h3>
+                    
             		<xsl:value-of select="name"/>
+                    
             	</h3>
             	<div>
             		<xsl:value-of select="introduce" disable-output-escaping="yes" />
 
             	</div>
+                
             </xsl:for-each>
         </div>
     </xsl:template>
