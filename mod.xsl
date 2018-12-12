@@ -2,9 +2,15 @@
     <xsl:template match="/root" name="wurui.company-introduce">
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-company-introduce" ox-mod="company-introduce">
-            <h1>
-                This is mod company-introduce;
-            </h1>
+            <xsl:for-each select="data/info-company/i[1]">
+            	<h3>
+            		<xsl:value-of select="name"/>
+            	</h3>
+            	<div>
+            		<xsl:value-of select="introduce" disable-output-escaping="yes" />
+
+            	</div>
+            </xsl:for-each>
         </div>
     </xsl:template>
 </xsl:stylesheet>
