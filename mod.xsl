@@ -8,10 +8,9 @@
             		<xsl:value-of select="name"/>
                     
             	</h3>
-            	<div>
+            	<oxrichtext style="text-indent:2em;line-height:1.6;">
             		<xsl:value-of select="description" disable-output-escaping="yes" />
-
-            	</div>
+            	</oxrichtext>
                 
             </xsl:for-each>
         </div>
